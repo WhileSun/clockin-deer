@@ -1,5 +1,7 @@
 export default defineAppConfig({
+  // entryPagePath: 'pages/clock/list/index',
   pages: [
+    'pages/clock/list/index',
     'pages/index/index',
     'pages/user/index'
   ],
@@ -11,18 +13,23 @@ export default defineAppConfig({
   },
   tabBar: {
     custom:true,
-    color: '#3333333',
-    selectedColor: '#fa2c19',
+    color: '#696969',
+    selectedColor: '#fda12f',
     backgroundColor: '#ffffff',
     list: [
       {
-        pagePath: 'pages/index/index',
-        text: '首页'
+        pagePath: 'pages/clock/list/index',
+        text: '打卡',
+        iconPath: 'assets/images/tabbar/clockin.png',
+        selectedIconPath: 'assets/images/tabbar/clockin_selected.png',
       },
       {
         pagePath: 'pages/user/index',
-        text: '用户',
+        text: '我的',
+        iconPath: 'assets/images/tabbar/user.png',
+        selectedIconPath: 'assets/images/tabbar/user_selected.png',
       },
     ]
-  }
+  },
+  "usingComponents": {}
 })
